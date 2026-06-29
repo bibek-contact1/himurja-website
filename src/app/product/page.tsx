@@ -7,6 +7,7 @@ import {
   ShoppingBag, MapPin, FlaskConical, Truck, RotateCcw
 } from "lucide-react";
 import { PRODUCT, FAQS, TESTIMONIALS } from "@/lib/data";
+import { publicPath } from "@/lib/base-path";
 import { formatPrice, cn } from "@/lib/utils";
 import Link from "@/components/static-link";
 import Image from "next/image";
@@ -31,7 +32,7 @@ export default function ProductPage() {
             >
               <div className="aspect-[3/4] bg-warm-white relative overflow-hidden">
                 <Image
-                  src="/product-bottle-mockup.jpg"
+                  src={publicPath("/product-bottle-mockup.jpg")}
                   alt="HIMURJA No. 01 botanical recovery oil bottle"
                   fill
                   priority

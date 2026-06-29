@@ -3,12 +3,16 @@ import path from "node:path";
 
 const repoName = process.env.GITHUB_REPOSITORY?.split("/")[1];
 const isGithubPages = process.env.GITHUB_ACTIONS === "true" && Boolean(repoName);
+const basePath = isGithubPages ? `/${repoName}` : "";
 
 const nextConfig: NextConfig = {
   output: "export",
   trailingSlash: true,
-  basePath: isGithubPages ? `/${repoName}` : undefined,
-  assetPrefix: isGithubPages ? `/${repoName}/` : undefined,
+  basePath: basePath || undefined,
+  assetPrefix: basePath ? `${basePath}/` : undefined,
+  env: {
+    NEXT_PUBLIC_BASE_PATH: basePath,
+  },
   images: {
     unoptimized: true,
   },

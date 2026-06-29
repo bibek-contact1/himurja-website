@@ -3,6 +3,7 @@
 import React from "react";
 import Image from "next/image";
 import Link from "@/components/static-link";
+import { publicPath } from "@/lib/base-path";
 import { motion } from "framer-motion";
 import { Quote } from "lucide-react";
 import SectionWrapper from "@/components/section-wrapper";
@@ -79,7 +80,7 @@ export default function FounderStory() {
         >
           <div className="aspect-[4/5] bg-warm-white relative overflow-hidden">
             <Image
-              src="/himalayan-botanical-story.jpg"
+              src={publicPath("/himalayan-botanical-story.jpg")}
               alt="Himalayan mountains and botanicals representing HIMURJA inspiration"
               fill
               sizes="(min-width: 1024px) 45vw, 100vw"
