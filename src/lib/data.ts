@@ -18,7 +18,7 @@ export const PRODUCT = {
   formulaSummary:
     "Jojoba 40%, Hemp Seed Oil 30%, Rosehip 29.2%, Wild Rhododendron 0.8%.",
   description:
-    "A transparent, premium overnight botanical recovery oil designed to support healthier skin with fewer products. Formulated with four cold-pressed botanical oils sourced from the Himalayan region, this single product replaces complicated multi-step routines.",
+    "A transparent, premium overnight botanical recovery oil designed to support healthier skin with fewer products. Formulated with four cold-pressed botanical oils sourced from the USA and Nepal, this single product replaces complicated multi-step routines.",
   philosophy:
     "The product supports the skin overnight while reducing routine complexity. It does not claim to cure diseases or make unrealistic promises. It simply helps your skin do what it was designed to do—recover naturally while you sleep.",
   howToUse: [
@@ -39,7 +39,7 @@ export const PRODUCT = {
   ingredients: [
     {
       name: "Cold Pressed Jojoba Oil",
-      origin: "India",
+      origin: "USA (Imported)",
       botanicalName: "Simmondsia chinensis",
       function: "Deeply moisturizes and balances sebum production",
       scientificExplanation:
@@ -71,7 +71,7 @@ export const PRODUCT = {
     },
     {
       name: "Cold Pressed Rosehip Oil",
-      origin: "Nepal",
+      origin: "USA (Imported)",
       botanicalName: "Rosa canina",
       function: "Supports skin regeneration and brightening",
       scientificExplanation:
@@ -140,7 +140,7 @@ export const FAQS = [
   {
     question: "Where do your ingredients come from?",
     answer:
-      "We believe transparency is non-negotiable. Our Jojoba oil is sourced from India, our Hemp Seed and Rosehip oils from Nepal, and our Wild Rhododendron oil is wild-harvested from the Himalayan region of Nepal. Every batch is traceable and tested for purity.",
+      "We believe transparency is non-negotiable. Our Jojoba oil and Rosehip oil are imported from the USA, while our Hemp Seed oil and Wild Rhododendron oil are sourced from Nepal. Every batch is traceable and tested for purity.",
   },
   {
     question: "How long does one bottle last?",
