@@ -18,7 +18,8 @@ export default function HeroSection() {
         fill
         priority
         sizes="100vw"
-        className="object-cover object-left"
+        className="object-cover"
+        style={{ objectPosition: "30% center" }}
       />
       <div className="absolute inset-0 bg-gradient-to-r from-charcoal/75 via-charcoal/20 to-transparent" />
       <div className="absolute inset-x-0 top-0 h-32 bg-gradient-to-b from-charcoal/35 to-transparent" />
