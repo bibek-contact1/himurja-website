@@ -15,6 +15,8 @@ export const PRODUCT = {
   type: "Premium Overnight Botanical Recovery Oil",
   size: "15 ml",
   price: 1499,
+  formulaSummary:
+    "Jojoba 40%, Hemp Seed Oil 30%, Rosehip 29.2%, Wild Rhododendron 0.8%.",
   description:
     "A transparent, premium overnight botanical recovery oil designed to support healthier skin with fewer products. Formulated with four cold-pressed botanical oils sourced from the Himalayan region, this single product replaces complicated multi-step routines.",
   philosophy:
@@ -81,7 +83,7 @@ export const PRODUCT = {
         "Antioxidant protection",
         "Helps improve skin texture",
       ],
-      percentage: "20%",
+      percentage: "29.2%",
     },
     {
       name: "Essential Wild Rhododendron Oil",
@@ -97,11 +99,11 @@ export const PRODUCT = {
         "Soothing aroma",
         "Anti-inflammatory properties",
       ],
-      percentage: "10%",
+      percentage: "0.8%",
     },
   ],
   fullIngredientsList:
-    "Simmondsia Chinensis (Jojoba) Seed Oil*, Cannabis Sativa (Hemp) Seed Oil*, Rosa Canina (Rosehip) Fruit Oil*, Rhododendron Anthopogon (Wild Rhododendron) Essential Oil. *Certified Cold-Pressed.",
+    "Simmondsia Chinensis (Jojoba) Seed Oil 40%, Cannabis Sativa (Hemp) Seed Oil 30%, Rosa Canina (Rosehip) Fruit Oil 29.2%, Rhododendron Anthopogon (Wild Rhododendron) Essential Oil 0.8%. Certified cold-pressed botanical oils.",
   certifications: [
     "100% Natural Origin",
     "Cold-Pressed Oils",

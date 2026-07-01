@@ -63,7 +63,9 @@ export default function FounderStory() {
 
           <div className="mt-8">
             <Link
-              href="/about"
+              href="https://bibeksunar.com.np"
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center text-sm font-medium text-charcoal border-b border-charcoal pb-0.5 hover:text-gold hover:border-gold transition-colors"
             >
               Read the full story

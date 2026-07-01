@@ -30,14 +30,14 @@ export default function ProductPage() {
               transition={{ duration: 0.8 }}
               className="relative"
             >
-              <div className="aspect-[3/4] bg-warm-white relative overflow-hidden">
+              <div className="aspect-[3/4] relative overflow-hidden bg-charcoal">
                 <Image
-                  src={publicPath("/product-bottle-mockup.jpg")}
+                  src={publicPath("/himurja-product.png")}
                   alt="HIMURJA No. 01 botanical recovery oil bottle"
                   fill
                   priority
                   sizes="(min-width: 1024px) 45vw, 100vw"
-                  className="object-cover"
+                  className="object-contain p-8 md:p-12"
                 />
               </div>
               <div className="absolute -bottom-4 -right-4 bg-white p-4 shadow-lg">
@@ -68,6 +68,14 @@ export default function ProductPage() {
               <p className="text-stone leading-relaxed mb-8">
                 {PRODUCT.description}
               </p>
+              <div className="mb-8 border-l-2 border-gold bg-white px-5 py-4">
+                <p className="text-xs font-semibold uppercase tracking-[0.18em] text-green">
+                  Raw Ingredient Ratio
+                </p>
+                <p className="mt-2 text-sm font-medium leading-relaxed text-charcoal">
+                  {PRODUCT.formulaSummary}
+                </p>
+              </div>
 
               {/* Trust badges */}
               <div className="flex flex-wrap gap-4 mb-8">
@@ -112,7 +120,7 @@ export default function ProductPage() {
                 </div>
                 <button className="flex-1 flex items-center justify-center gap-2 bg-charcoal text-white px-8 py-3 font-medium tracking-wide hover:bg-dark-charcoal transition-all duration-300">
                   <ShoppingBag className="h-5 w-5" />
-                  Add to Cart — {formatPrice(PRODUCT.price * quantity)}
+                  Add to Cart - {formatPrice(PRODUCT.price * quantity)}
                 </button>
               </div>
 
@@ -232,7 +240,7 @@ export default function ProductPage() {
               <div className="flex items-center gap-1 text-xs text-stone mb-3">
                 <MapPin className="h-3 w-3" />
                 {ingredient.origin}
-                <span className="mx-1">·</span>
+                <span className="mx-1">|</span>
                 <FlaskConical className="h-3 w-3" />
                 {ingredient.botanicalName}
               </div>

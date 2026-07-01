@@ -43,3 +43,19 @@ export function publicPath(src: string) {
 
   return addBasePath(pathname, suffix);
 }
+
+export function stripBasePath(pathname: string) {
+  if (!basePath) {
+    return pathname;
+  }
+
+  if (pathname === basePath) {
+    return "/";
+  }
+
+  if (pathname.startsWith(`${basePath}/`)) {
+    return pathname.slice(basePath.length) || "/";
+  }
+
+  return pathname;
+}

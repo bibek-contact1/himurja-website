@@ -2,10 +2,12 @@
 "use client";
 
 import React from "react";
+import Image from "next/image";
 import Link from "@/components/static-link";
 import { motion } from "framer-motion";
 import { Globe, Camera, MessageCircle, ArrowUpRight } from "lucide-react";
 import { BRAND, NAVIGATION } from "@/lib/data";
+import { publicPath } from "@/lib/base-path";
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -23,10 +25,15 @@ export default function Footer() {
             transition={{ duration: 0.6 }}
             className="lg:col-span-1"
           >
-            <Link href="/">
-              <span className="text-2xl font-serif font-bold tracking-wider text-charcoal">
-                HIMURJA
-              </span>
+            <Link href="/" className="inline-flex">
+              <Image
+                src={publicPath("/himurja-logo-full.png")}
+                alt="HIMURJA Botanical Skincare"
+                width={220}
+                height={150}
+                sizes="220px"
+                className="h-auto w-44 object-contain"
+              />
             </Link>
             <p className="mt-4 text-stone text-sm leading-relaxed max-w-xs">
               {BRAND.tagline}

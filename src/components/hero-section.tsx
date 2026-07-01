@@ -6,20 +6,22 @@ import { ArrowDown } from "lucide-react";
 import Link from "@/components/static-link";
 import Image from "next/image";
 import { publicPath } from "@/lib/base-path";
+import { PRODUCT } from "@/lib/data";
+import { formatPrice } from "@/lib/utils";
 
 export default function HeroSection() {
   return (
     <section className="relative min-h-[88svh] flex items-center overflow-hidden pt-24 pb-14">
       <Image
-        src={publicPath("/hero-botanical-recovery.jpg")}
-        alt="HIMURJA botanical recovery oil bottle against Himalayan botanicals"
+        src={publicPath("/hero-himurja-product.jpg")}
+        alt="HIMURJA No. 01 overnight facial oil with the HIMURJA logo"
         fill
         priority
         sizes="100vw"
-        className="object-cover object-[34%_center] md:object-center"
+        className="object-cover object-[46%_center] md:object-center"
       />
-      <div className="absolute inset-0 bg-gradient-to-r from-charcoal/70 via-charcoal/30 to-transparent" />
-      <div className="absolute inset-x-0 top-0 h-32 bg-gradient-to-b from-charcoal/55 to-transparent" />
+      <div className="absolute inset-0 bg-gradient-to-r from-charcoal/75 via-charcoal/20 to-transparent" />
+      <div className="absolute inset-x-0 top-0 h-32 bg-gradient-to-b from-charcoal/35 to-transparent" />
 
       {/* Content */}
       <div className="relative z-10 w-full max-w-7xl mx-auto px-6 md:px-12 lg:px-16">
@@ -37,6 +39,9 @@ export default function HeroSection() {
           <p className="text-white/80 text-base md:text-xl max-w-[34rem] mb-10 leading-relaxed">
             Four cold-pressed botanical oils for a simpler nighttime ritual.
             Skin support without the noise.
+          </p>
+          <p className="mb-8 inline-block max-w-full border border-white/20 bg-white/10 px-4 py-2 text-xs font-semibold leading-relaxed tracking-wide text-white backdrop-blur-sm sm:text-sm">
+            {formatPrice(PRODUCT.price)} | {PRODUCT.size} | {PRODUCT.formulaSummary}
           </p>
 
           <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 sm:gap-6">
