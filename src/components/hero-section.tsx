@@ -13,7 +13,7 @@ export default function HeroSection() {
   return (
     <section className="relative min-h-[88svh] flex items-center overflow-hidden pt-24 pb-14">
       <Image
-        src={publicPath("/hero-himurja-product.jpg")}
+        src={publicPath("/product img.jpeg")}
         alt="HIMURJA No. 01 overnight facial oil with the HIMURJA logo"
         fill
         priority
