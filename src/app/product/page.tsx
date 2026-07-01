@@ -32,7 +32,7 @@ export default function ProductPage() {
             >
               <div className="aspect-[3/4] relative overflow-hidden bg-charcoal">
                 <Image
-                  src={publicPath("/himurja-product.png")}
+                  src={publicPath("/product img.jpeg")}
                   alt="HIMURJA No. 01 botanical recovery oil bottle"
                   fill
                   priority
